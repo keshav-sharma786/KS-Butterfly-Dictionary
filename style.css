@@ -1,0 +1,167 @@
+/* salsa, acme and bungee spice font family to be used */
+body {
+  margin: 0;
+  padding: 0;
+  height: 120vh;
+  background: url("/images/butterfly02.png");
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.main-container {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  margin-top: 0.5rem;
+  border: 2px solid aliceblue;
+  box-shadow: 0 0 10px aliceblue;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  transition: height 3s linear;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  font-family: "Salsa";
+  text-align: center;
+  /* background:#111; */
+  color: peru;
+  text-shadow: 1px 1px 40px maroon, 1px 1px 20px maroon;
+  font-size: 40px;
+}
+
+.input-field {
+  width: 60%;
+  /* display: block;
+  margin: 0 auto; */
+  height: 50px;
+  border-radius: 30px;
+  border: 5px solid maroon;
+  padding-left: 8rem;
+  /* font-size: 1.7em; */
+  color: black;
+  font-size: 1.6em;
+  font-weight: 500;
+  box-shadow: 0 0 10px orangered;
+}
+
+.search-btn {
+  font-family: "Bungee Spice";
+  width: 200px;
+  border-radius: 30px;
+  height: 60px;
+  font-size: 1.6em;
+  font-weight: 900;
+  background-color: #4d270e;
+  color: antiquewhite;
+  margin-top: 1rem;
+  border: 5px solid blueviolet;
+  box-shadow: 0 0 40px maroon;
+}
+/* 
+.wordDiv {
+  width: auto;
+  border-radius: 30px;
+  height: 20px;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 1.7rem;
+ 
+  color: antiquewhite;
+  margin-top: 1rem;
+  border: 2px solid aliceblue;
+  box-shadow: 0 0 40px yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+.word-div {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 30px;
+  border: 3px solid aliceblue;
+  box-shadow: 0 0 40px yellow;
+  font-family: sans-serif;
+  margin-top: 1rem;
+  /* background-color: #333; */
+
+  /* Content wrapping and visibility */
+  max-width: 60vw; /* Prevents going outside screen */
+  white-space: normal; /* Allows line breaks */
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word;
+
+  /* Center horizontally */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Let height grow with content */
+  height: auto;
+}
+
+.speech-noun-adjective {
+  /* background-color: pink; */
+  /* width: auto; */
+  font-family: sans-serif;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 30px;
+  height: auto;
+  font-size: 1.2em;
+  font-weight: 900;
+  padding: 0.8rem;
+  color: #fff;
+  border: 3px solid aliceblue;
+  box-shadow: 0 0 40px yellow;
+  max-width: 50vw;
+  margin-left: 2rem;
+}
+
+.unordered-list {
+  list-style-type: none;
+}
+.list-definitions {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  /* padding-left: 0;
+  text-align: left;
+  text-shadow: 0px 0px 10px black; */
+  text-align: left;
+  margin-right: 1rem;
+  margin-block: 2rem;
+}
+
+@media(max-width: 768px) {
+  .input-field {
+    width: 40%;
+  }
+
+  .input-field::-webkit-input-placeholder::after {
+  color:#666;
+  content:"Line 1\A Line 2\A Line 3\A";
+}
+}
